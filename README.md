@@ -2,7 +2,7 @@
 
 Here is a working SD card image for installing Arch Linux on an OrangePi Zero. It basically follows [this excellent build guide][build-guide] but can save you a lot of time if you just want to get an image up an running, especially with getting the ethernet support to work.
 
-The image is located [here][image].
+The image is located [here][image]. (It is an unofficial image, not supported by ArchLinux, use at your own risk)
 
 [build-guide]: https://github.com/ubitux/archlinuxarm-orangepi_zero
 [image]: https://dl.ng3.io/opz/ArchLinuxARM-OrangePiZero-20171120.img.xz
