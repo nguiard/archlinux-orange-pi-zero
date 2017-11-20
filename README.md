@@ -1,6 +1,6 @@
 # Arch Linux on OrangePi Zero
 
-A base working SD card image for installing Arch Linux on an OrangePi Zero. It basically follows [this excellent build guide][build-guide] but can save you a lot of time if you just want to get an image up an running, especially with getting the ethernet support to work.
+Here is a working SD card image for installing Arch Linux on an OrangePi Zero. It basically follows [this excellent build guide][build-guide] but can save you a lot of time if you just want to get an image up an running, especially with getting the ethernet support to work.
 
 The image is located [here][image].
 
@@ -45,7 +45,7 @@ On Windows, use a tool like [Etcher][etcher].
 
 ### Resize the partition to use the whole SD card
 
-Once the system is working, use `fdisk /dev/mmcblk0` ([fdisk][fdisk]) as root to resize the partition. Press `d` to delete the current partition, then press `n` to create a new partition, and press `Enter` 4 times to accept the defaults. Then answer `N` when fdisk asks about removing the existing ext4 signature.
+Once the system is working, use `fdisk /dev/mmcblk0` ([fdisk][fdisk]) as root to resize the partition. Press `d` to delete the current partition, then press `n` to create a new partition, and press `Enter` 4 times to accept the defaults. fdisk will give you defaults that work and make the partition as big as possible. Then answer `N` when fdisk asks about removing the existing ext4 signature.
 
 Finally press `w` to write the changes.
 
