@@ -57,6 +57,8 @@ Reboot, and use `resize2fs /dev/mmcblk0p1` as root to update the filesystem size
 
 The linux kernel is pinned to version 4.13-rc7 in this image. This is unfortunate but is required in order to keep the ethernet support working, as newer versions break it at the time of writing. If you try a newer kernel and get it to work, please notify me.
 
+Feedbacks and comments are welcome.
+
 ## Additional resources
 
 - Arch forum thread about Orange Pi Zero installation: [https://archlinuxarm.org/forum/viewtopic.php?f=60&t=11790][forum-arch]
