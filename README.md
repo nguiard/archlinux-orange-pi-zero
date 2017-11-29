@@ -5,7 +5,7 @@ Here is a working SD card image for installing Arch Linux on an OrangePi Zero. I
 The image is located [here][image]. (It is an unofficial image, not supported by ArchLinux, use at your own risk)
 
 [build-guide]: https://github.com/ubitux/archlinuxarm-orangepi_zero
-[image]: https://dl.ng3.io/opz/ArchLinuxARM-OrangePiZero-20171120.img.xz
+[image]: https://dl.ng3.io/opz/ArchLinuxARM-OrangePiZero-latest.img.xz
 
 ## Install
 
@@ -16,7 +16,7 @@ You need an SD card of at least 2GB. You can resize the partition to use your wh
 Replace 'sdX' with the device corresponding to your SD card.
 
 ```
-curl https://dl.ng3.io/opz/ArchLinuxARM-OrangePiZero-20171120.img.xz | xzcat | sudo dd of=/dev/sdX bs=1M status=progress
+curl https://dl.ng3.io/opz/ArchLinuxARM-OrangePiZero-latest.img.xz | xzcat | sudo dd of=/dev/sdX bs=1M status=progress
 ```
 
 ### Safer
@@ -24,16 +24,16 @@ curl https://dl.ng3.io/opz/ArchLinuxARM-OrangePiZero-20171120.img.xz | xzcat | s
 Download the image, check the checksum, and install the traditional way. SHA256:
 
 ```
-d0f676f1228f288cce857728ed8176409553dc9c239bd5d053cfc61b9c592325  ArchLinuxARM-OrangePiZero-20171120.img.xz
+7265860878c03acff4f3ea36d66eb8c806a1ba2ec9589498176a0889869ddaba  ArchLinuxARM-OrangePiZero-latest.img.xz
 ```
 
 Steps:
 
 ```
-$ wget https://dl.ng3.io/opz/ArchLinuxARM-OrangePiZero-20171120.img.xz
-$ sha256sum ArchLinuxARM-OrangePiZero-20171120.img.xz
-d0f676f1228f288cce857728ed8176409553dc9c239bd5d053cfc61b9c592325  ArchLinuxARM-OrangePiZero-20171120.img.xz
-$ xzcat ArchLinuxARM-OrangePiZero-20171120.img.xz | sudo dd of=/dev/sdX bs=1M status=progress
+$ wget https://dl.ng3.io/opz/ArchLinuxARM-OrangePiZero-latest.img.xz
+$ sha256sum ArchLinuxARM-OrangePiZero-latest.img.xz
+7265860878c03acff4f3ea36d66eb8c806a1ba2ec9589498176a0889869ddaba  ArchLinuxARM-OrangePiZero-latest.img.xz
+$ xzcat ArchLinuxARM-OrangePiZero-latest.img.xz | sudo dd of=/dev/sdX bs=1M status=progress
 ```
 
 On Mac, use `dd of=/dev/rdiskX bs=1m conv=sync` (see [why dd is slow on Mac][slow-dd-mac]).
