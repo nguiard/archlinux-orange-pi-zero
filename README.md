@@ -53,9 +53,9 @@ Reboot, and use `resize2fs /dev/mmcblk0p1` as root to update the filesystem size
 
 [fdisk]: https://wiki.archlinux.org/index.php/Fdisk
 
-## Important Warning!
+## Ethernet
 
-The linux kernel is pinned to version 4.13-rc7 in this image. This is unfortunate but is required in order to keep the ethernet support working, as newer versions break it at the time of writing. If you try a newer kernel and get it to work, please notify me.
+Ethernet now works with linux-armv7-rc 4.17.rc5-1 and most probably newer versions.
 
 Feedbacks and comments are welcome.
 
