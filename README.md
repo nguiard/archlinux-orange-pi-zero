@@ -59,8 +59,6 @@ Reboot, and use `resize2fs /dev/mmcblk0p1` as root to update the filesystem size
 
 It has been reported that when using the "Orange Pi expansion board" (that adds 2 USB ports and other IO), the additional USB ports don't work out of the box. A fix is proposed which consists in putting a sun8i-h2-plus-orangepi-zero-3usb.dtb in `/boot/dtbs`. This file is not installed by default, but is included in the default user directory for convenience, to save you troubleshooting time in case you want to use the expansion board. However, it is not part of the base ArchLinuxARM distribution which the current image is upon, and I cannot vouch for its validity. Use at your own risk.
 
-Feedbacks and comments are welcome.
-
 ## SSH into Orange Pi Zero
 
 Once your image is installed on the SD card you have booted the Orange Pi Zero, if you're using ethernet, you can login via ssh:
@@ -74,6 +72,8 @@ $ ssh alarm@IP_ADDR
 ```
 
 This is not specific to this image and is the same procedure as for the general ArchLinuxARM. As a reminder, default password is `alarm` (for user `alarm`) and `root` for superuser.
+
+Feedbacks and comments are welcome.
 
 ## Additional resources
 
